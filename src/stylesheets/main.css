@@ -1,0 +1,72 @@
+:root{
+  --select-width: 400px;
+  --background-color: lightyellow;
+
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit
+}
+
+main {
+  background-color: var(--background-color);
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+arcticle, section{
+  width:100%;
+  height: 100%;
+}
+select{
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(255,255,255, 0.7);
+  border: 3px solid rgba(255, 255,255, 0.4);
+}
+#harmed-objects-view{
+  height: var(--select-width);
+  width: var(--select-width);
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0, 0.2);
+}
+table{
+  border: 1px solid rgba(0,0,0, 0.2);
+}
+#percentage{
+  font-weight: 600;
+  color: darkgreen;
+}
+#table-wrapper{
+  height: 100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.2);
+}
+
